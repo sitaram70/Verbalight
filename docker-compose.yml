@@ -11,7 +11,8 @@ services:
     environment:
       - OPENAI_MODEL=gpt-4-turbo-preview      
       - WEAVIATE_URL_VERBA=http://weaviate:8080
-      - OPENAI_API_KEY=$MY_OPENAI_API_KEY
+      #- OPENAI_API_KEY=$MY_OPENAI_API_KEY
+      - OPENAI_API_KEY=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
       ## IF YOU WANT AUTHENTICATION, UNCOMENT BELLOW 
       ## AND ADD WEAVIATE SERVICE
       #- WEAVIATE_API_KEY_VERBA=adminkey
@@ -55,7 +56,8 @@ services:
       retries: 5
       start_period: 10s
     environment:
-      OPENAI_APIKEY: $MY_OPENAI_API_KEY
+      #OPENAI_APIKEY: $MY_OPENAI_API_KEY
+      OPENAI_APIKEY: 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
       QUERY_DEFAULTS_LIMIT: 25
       AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
       PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
