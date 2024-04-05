@@ -11,7 +11,7 @@ services:
     environment:
       - OPENAI_MODEL=gpt-4-turbo-preview      
       - WEAVIATE_URL_VERBA=http://weaviate:8080
-      - OPENAI_API_KEY=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
+      - OPENAI_API_KEY=$MY_OPENAI_API_KEY
       ## IF YOU WANT AUTHENTICATION, UNCOMENT BELLOW 
       ## AND ADD WEAVIATE SERVICE
       #- WEAVIATE_API_KEY_VERBA=adminkey
